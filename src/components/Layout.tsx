@@ -251,8 +251,8 @@ export default function Layout() {
         <meta property="og:description" content="AHV Worldwide is your trusted partner for global trade, export, import, pharma and ayurveda consultancy, and education services." />
         <meta property="og:type" content="website" />
       </Helmet>
-      <div className="relative z-[60] px-[20px] pt-6 mb-[5px] bg-white">
-        <header className="w-full mx-auto flex items-center justify-between bg-white rounded-full px-6 py-2">
+      <div className="relative z-[60] px-0 pt-0 sm:px-[20px] sm:pt-6 mb-[5px] bg-white">
+        <header className="w-full mx-auto flex items-center justify-between bg-white rounded-none sm:rounded-full px-4 sm:px-6 py-3 sm:py-2 shadow-sm sm:shadow-none border-b border-zinc-100 sm:border-none">
           <Link to="/" className="flex items-center">
           <img src="https://res.cloudinary.com/dm3scoj2q/image/upload/v1782555950/ChatGPT_Image_Jun_27_2026_03_55_00_PM_xeerba.png" alt="AHV Worldwide" className="h-12 w-auto rounded-full" />
         </Link>
