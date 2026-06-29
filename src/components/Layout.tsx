@@ -144,15 +144,19 @@ export const LeadFormModal = ({ isOpen, onClose, defaultService = "" }: { isOpen
         
         <form className="flex flex-col gap-4" onSubmit={(e) => { e.preventDefault(); onClose(); }}>
           <div>
-            <label className="block text-xs font-bold text-zinc-700 mb-1">Name</label>
+            <label className="block text-xs font-bold text-zinc-700 mb-1">Name <span className="text-red-500">*</span></label>
             <input type="text" required placeholder="John Doe" className="w-full bg-[#EAF0F6] border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-[#FF6E14] outline-none transition-all" />
           </div>
           <div>
-            <label className="block text-xs font-bold text-zinc-700 mb-1">Phone or Email</label>
-            <input type="text" required placeholder="+91 99214 81220 or john@example.com" className="w-full bg-[#EAF0F6] border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-[#FF6E14] outline-none transition-all" />
+            <label className="block text-xs font-bold text-zinc-700 mb-1">Email <span className="text-red-500">*</span></label>
+            <input type="email" required placeholder="john@example.com" className="w-full bg-[#EAF0F6] border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-[#FF6E14] outline-none transition-all" />
           </div>
           <div>
-             <label className="block text-xs font-bold text-zinc-700 mb-1">Service of Interest</label>
+            <label className="block text-xs font-bold text-zinc-700 mb-1">Phone Number <span className="text-red-500">*</span></label>
+            <input type="tel" required placeholder="+91 99214 81220" className="w-full bg-[#EAF0F6] border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-[#FF6E14] outline-none transition-all" />
+          </div>
+          <div>
+             <label className="block text-xs font-bold text-zinc-700 mb-1">Service of Interest <span className="text-red-500">*</span></label>
              <div className="relative">
                <select defaultValue={defaultService} className="w-full bg-[#EAF0F6] border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-[#FF6E14] outline-none transition-all text-zinc-700 appearance-none font-sans font-medium">
                  <option value="" disabled>Select a service</option>
